@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/club_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/club_logo"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            tools:text="Club Name"/>
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp"
+            tools:text="Manager"/>
+
+        <TextView
+            android:id="@+id/stadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            tools:text="Club Stadium"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
