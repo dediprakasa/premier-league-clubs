@@ -40,13 +40,13 @@ public class ListClubAdapter extends RecyclerView.Adapter<ListClubAdapter.ListVi
         Club club = clubList.get(i);
 
         Glide.with(listViewHolder.itemView.getContext())
-                .load(club.getPhoto())
+                .load(club.getLogo())
                 .apply(new RequestOptions().override(60, 60))
                 .into(listViewHolder.imgPhoto);
 
-        listViewHolder.tvName.setText(club.getName());
+        listViewHolder.tvName.setText(club.getClubName());
         listViewHolder.tvManager.setText(club.getManager());
-        listViewHolder.tvStadium.setText(club.getStadium());
+        listViewHolder.tvStadium.setText(club.getStdm());
 
         listViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

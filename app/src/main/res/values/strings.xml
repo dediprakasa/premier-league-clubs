@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Premier League Stats</string>
+    <string name="myName">Dedi Prakasa</string>
+    <string name="email">dedprakasa@gmail.com</string>
 </resources>

@@ -1,38 +1,21 @@
 package com.example.premierleaguestats;
 
 public class Club {
-    private String name;
+    private String clubName;
     private String manager;
-    private String stadium;
-    private String photo;
+    private String stdm;
+    private String logo;
+    private String website;
+    private String stdmImg;
+    private String color;
     private String index;
 
-    public String getIndex() {
-        return index;
+    public String getClubName() {
+        return clubName;
     }
 
-    public void setIndex(String index) {
-        this.index = index;
-    }
-
-
-
-    public String getWebsite() {
-        return website;
-    }
-
-    public void setWebsite(String website) {
-        this.website = website;
-    }
-
-    public String website;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setClubName(String clubName) {
+        this.clubName = clubName;
     }
 
     public String getManager() {
@@ -43,19 +26,51 @@ public class Club {
         this.manager = manager;
     }
 
-    public String getStadium() {
-        return stadium;
+    public String getStdm() {
+        return stdm;
     }
 
-    public void setStadium(String stadium) {
-        this.stadium = stadium;
+    public void setStdm(String stdm) {
+        this.stdm = stdm;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getWebsite() {
+        return website;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+
+    public String getStdmImg() {
+        return stdmImg;
+    }
+
+    public void setStdmImg(String stdmImg) {
+        this.stdmImg = stdmImg;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getIndex() {
+        return index;
+    }
+
+    public void setIndex(String index) {
+        this.index = index;
     }
 }

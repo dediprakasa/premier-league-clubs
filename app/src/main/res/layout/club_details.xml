@@ -17,9 +17,11 @@
             android:id="@+id/img_stadium"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:src="@android:color/darker_gray" />
+            android:src="@android:color/darker_gray"
+            android:scaleType="centerCrop" />
 
         <LinearLayout
+            android:id="@+id/color_detail"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:orientation="vertical"
@@ -32,8 +34,9 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="8dp"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="@android:color/white"
                 tools:text="Club Name" />
 
             <TextView
@@ -42,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"
                 tools:text="Stadium" />
 
             <TextView
@@ -49,16 +53,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                tools:text="Official Website" />
+                tools:text="Official Website"
+                android:autoLink="web"
+                android:textColor="@android:color/white"
+                android:textColorLink="@android:color/white"/>
 
         </LinearLayout>
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_detail"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:src="@mipmap/ic_launcher"
-        android:layout_marginTop="110dp"/>
+        android:layout_marginTop="110dp" />
 
 
 </RelativeLayout>
