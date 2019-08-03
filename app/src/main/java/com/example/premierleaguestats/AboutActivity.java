@@ -6,6 +6,11 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AboutActivity extends AppCompatActivity {
 
     private ImageView imageView;
@@ -20,8 +25,8 @@ public class AboutActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
 
-        name.setText("Dedi Prakasa");
-        email.setText("dedprakasa@gmail.com");
+        name.setText(getString(R.string.my_name));
+        email.setText(getString(R.string.my_email));
 
     }
 }
